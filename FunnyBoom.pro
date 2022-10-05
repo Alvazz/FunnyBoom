@@ -9,11 +9,22 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    ./KNSUIFramework/knsqframe.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    sttbuttondocker.cpp \
+    sttdownsideframe.cpp \
+    sttpreviewwidget.cpp \
+    stttopsideframe.cpp
 
 HEADERS += \
-    mainwindow.h
+    ./KNSUIFramework/knsqframe.h \
+    GlobalDefine.h \
+    mainwindow.h \
+    sttbuttondocker.h \
+    sttdownsideframe.h \
+    sttpreviewwidget.h \
+    stttopsideframe.h
 
 FORMS += \
     mainwindow.ui
