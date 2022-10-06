@@ -81,6 +81,7 @@ void STTButtonDocker::resizeEvent(QResizeEvent *event)
 //     QFrame::resizeEvent(event);
 }
 
+
 void STTButtonDocker::paintEvent(QPaintEvent *e)
 {
 
@@ -204,6 +205,11 @@ void STTButtonDocker::createNormalContextMenu(QMouseEvent *e)
     m_contextMenu->addSeparator();
     m_contextMenu->addAction(m_moveToMutil);
     m_contextMenu->exec(e->globalPos());
+}
+
+void STTButtonDocker::mouseDoubleClickEvent(QMouseEvent* event)
+{
+    qDebug("db clicked!!");
 }
 
 void STTButtonDocker::mousePressEvent(QMouseEvent *e)

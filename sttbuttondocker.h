@@ -54,6 +54,8 @@ protected:
     void mouseReleaseEvent(QMouseEvent *e) override;
     void mouseMoveEvent(QMouseEvent *e) override;
 
+    void mouseDoubleClickEvent(QMouseEvent* event) override;
+
 //    bool eventFilter(QObject *o, QEvent *e) override;
 
     void dragEnterEvent(QDragEnterEvent *event) override;
